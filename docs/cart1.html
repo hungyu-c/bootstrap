@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>確認明細</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container" style="max-width: 1280px;">
+      <nav class="navbar navbar-expand-md navbar-light pl-3" style="height: 92px;">
+        <a class="navbar-brand ml-3" href="#">
+          <img src="./img/logo1.svg" alt="" height="60" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto font-weight-bold">
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#" style="color: black;">Blog</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#" style="color: black;">Portfolio</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#" style="color: black;">About</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a class="nav-link" href="#" style="color: black;">Contact</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./cart1.html"><i class="fas fa-shopping-cart mr-4"
+                  style="font-size: 24px; color: black;"></i></a>
+            </li>            
+          </ul>          
+          <div class="dropdown" >
+            <a class="btn shadow-none"  href="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user-circle" style="font-size: 30px;"></i>
+            </a>          
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" >
+              <a class="dropdown-item" href="./login.html" >Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-fluid pt-5 pb-5" style="background-color: #D1D5DB;">
+      <div class="bg-light mx-auto" style="max-width:1024px; height:873px; border-radius:8px;padding: 40px;">
+        <h2 class="mb-4" style="font-size: 30px; font-weight: bolder;">購物車</h2>
+        <!-- 進度條start -->
+        <div class="container d-flex justify-content-around align-items-center position-relative"
+          style="max-width: 944px;">
+          <div class="d-flex justify-content-center align-items-center"
+            style="width: 40px;height: 40px;border-radius: 50%;background-color:#10B981">
+            <span class="" style="color: white; font-size: 18px;">1</span>
+          </div>
+
+          <div class="progress d-flex position-absolute"
+            style="width:18%; height: 8px;transform: translateX(-135%);">
+            <div class="progress-bar" role="progressbar" style="width: 30%; border-radius: 4px; background-color: #6EE7B7; "
+              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center"
+            style="width: 40px;height: 40px;border-radius: 50%;background-color:white">
+            <span class="" style="color:black; font-size: 18px;">2</span>
+          </div>
+
+          <div class="progress d-flex position-absolute" style="width:18%; height: 8px;">
+            <div class="progress-bar" role="progressbar" style="width: 0%; border-radius: 4px; background-color: #6EE7B7; "
+              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center"
+            style="width: 40px;height: 40px;border-radius: 50%;background-color:white">
+            <span class="" style="color:black; font-size: 18px;">3</span>
+
+            <div class="progress d-flex position-absolute"
+              style="width:18%; height: 8px;transform: translateX(67%);">
+              <div class="progress-bar" role="progressbar" style="width: 0%; border-radius: 4px; background-color: #6EE7B7; "
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-center align-items-center"
+            style="width: 40px;height: 40px;border-radius: 50%;background-color:white">
+            <span class="" style="color:black; font-size: 18px;">4</span>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-around" style="max-width: 950px;">
+          <span class="mt-2 ml-1 mr-3">確認購物車</span>
+          <span class="mt-2 mr-4">付款與運送方式</span>
+          <span class="mt-2 mr-5">填寫資料</span>
+          <span class="mt-2 mr-3">完成訂購</span>
+        </div>
+        <!-- 進度條end -->
+
+        <hr class="my-3 mt-4">
+        <h3 class="mb-5" style="font-size: 24px; padding-top: 7px;">訂單明細</h3>
+        <div class="list d-flex align-items-center">
+          <div class="pic mr-3">
+            <img src="./img/chicken.jpg" alt="" style="width: 60px; border-radius: 50%;">
+          </div>
+          <div class="">
+            <h6 class="m-0">Chicken momo</h6>
+            <span class="text-secondary" style="font-size: 10px;">#41551</span>
+          </div>
+          <div class="ml-auto">
+            <span class="mr-1">-</span>
+            <input type="text" class="text-center" style="width: 30px; height: 25px; opacity:0.5;">
+            <span class="ml-1 mr-4">+</span>
+            <span class="mr-4" style="font-size: 9px;">$10.50</span>
+          </div>
+        </div>
+        <hr class="my-3 mt-4 mb-4">
+        <div class="list d-flex align-items-center">
+          <div class="pic mr-3">
+            <img src="./img/potatoes.jpg" alt="" style="width: 60px; border-radius: 50%;">
+          </div>
+          <div class="">
+            <h6 class="m-0">Spicy Mexican potatoes</h6>
+            <span class="text-secondary" style="font-size: 10px;">#66999</span>
+          </div>
+          <div class="ml-auto">
+            <span class="mr-1">-</span>
+            <input type="text" class="text-center" style="width: 30px; height: 25px; opacity:0.5;">
+            <span class="ml-1 mr-4">+</span>
+            <span class="mr-4" style="font-size: 9px;">$10.50</span>
+          </div>
+        </div>
+        <hr class="my-3 mt-4 mb-4">
+
+        <div class="list d-flex align-items-center">
+          <div class="pic mr-3">
+            <img src="./img/breakfast.jpg" alt="" style="width: 60px; border-radius: 50%;">
+          </div>
+          <div class="">
+            <h6 class="m-0">Breakfast</h6>
+            <span class="text-secondary" style="font-size: 10px;">#86577</span>
+          </div>
+          <div class="ml-auto">
+            <span class="mr-1">-</span>
+            <input type="text" class="text-center" style="width: 30px; height: 25px; opacity:0.5;">
+            <span class="ml-1 mr-4">+</span>
+            <span class="mr-4" style="font-size: 9px;">$10.50</span>
+          </div>
+        </div>
+        <hr class="my-3 mt-4 mb-4">
+
+        <div class="d-flex align-items-end flex-column ">
+          <div class="d-flex justify-content-between" style="width: 236px;">
+            <span class="text-secondary" style="font-size: 14px; line-height: 27px;">數量:</span>
+            <span class="font-weight-bold" style="font-size: 18px;line-height: 27px;">3</span>
+          </div>
+          <div class="d-flex justify-content-between" style="width: 236px;">
+            <span class="text-secondary" style="font-size: 14px; line-height: 27px;">小計:</span>
+            <span class="font-weight-bold" style="font-size: 18px; line-height: 27px;">$24.90</span>
+          </div>
+          <div class="d-flex justify-content-between" style="width: 236px;">
+            <span class="text-secondary" style="font-size: 14px; line-height: 27px;">運費:</span>
+            <span class="font-weight-bold" style="font-size: 18px; line-height: 27px;">$24.90</span>
+          </div>
+          <div class="d-flex justify-content-between" style="width: 236px;">
+            <span class="text-secondary" style="font-size: 14px; line-height: 27px;">總計:</span>
+            <span class="font-weight-bold" style="font-size: 18px; line-height: 27px;">$24.90</span>
+          </div>
+        </div>
+        <hr class="my-3 mt-4 mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <span><i class="fas fa-arrow-left"></i> 返回購物</span>
+          <a href="./cart2.html">
+            <button type="button" class="btn btn-primary btn-lg"
+              style="width: 144px;height:48px; font-size: 16px;">下一步</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <div class="container" style="max-width: 1536px; padding: 96px 20px">
+    <div class="row">
+      <div class="col-md-2 text-center text-md-left">
+        <div class="d-flex justify-content-center">
+          <img src="./img/logo2.svg" alt="" class="mr-2" height="40">
+          <h5 style="margin-top: 10px;">數位方塊</h5>
+        </div>
+        <p class="ml-4">
+          <small class="text text-secondary" style="font-size: 14px;">Air plant banjo lyft occupy retro adaptogen
+            indego</small>
+        </p>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-md-2 text-center text-md-left">
+        <ol class="list-unstyled text-secondary">
+          CATEGORIES<br /><br />
+          <li>First Link</li>
+          <li>Second Link</li>
+          <li>Third Link</li>
+          <li>Fourth Link</li>
+        </ol>
+      </div>
+      <div class="col-md-2 text-center text-md-left">
+        <ol class="list-unstyled text-secondary">
+          CATEGORIES<br /><br />
+          <li>First Link</li>
+          <li>Second Link</li>
+          <li>Third Link</li>
+          <li>Fourth Link</li>
+        </ol>
+      </div>
+      <div class="col-md-2 text-center text-md-left">
+        <ol class="list-unstyled text-secondary">
+          CATEGORIES<br /><br />
+          <li>First Link</li>
+          <li>Second Link</li>
+          <li>Third Link</li>
+          <li>Fourth Link</li>
+        </ol>
+      </div>
+      <div class="col-md-2 text-center text-md-left">
+        <ol class="list-unstyled text-secondary">
+          CATEGORIES<br /><br />
+          <li>First Link</li>
+          <li>Second Link</li>
+          <li>Third Link</li>
+          <li>Fourth Link</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-fluid bg-light py-3">
+    <div class="container d-flex text-secondary" style="max-width: 1536px; font-size: 14px;">
+      <div>© 2020 Tailblocks — </div>
+      <div><a href="#" class="text-secondary pl-1"> @knyttneve</a></div>
+      <i class="fab fa-facebook-f fa-lg ml-auto"></i>
+      <i class="fab fa-twitter fa-lg ml-3"></i>
+      <i class="fab fa-instagram fa-lg ml-3"></i>
+      <i class="fab fa-linkedin-in fa-lg ml-3"></i>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
